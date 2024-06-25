@@ -1,0 +1,84 @@
+body {
+    padding-top: 64px;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: aqua;
+    transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+    width: 100%;
+}
+.profile-image {
+    box-shadow: 0 0 20px rgba(0, 100, 255, 0.5);
+    border: 4px solid #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.profile-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 100, 255, 0.8);
+}
+.custom-button {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 4px 4px 5px rgb(77, 153, 197);
+    transition: all 0.3s ease;
+}
+.navbar-menu {
+    transition: max-height 0.3s ease-out, opacity 0.2s ease-out;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+.navbar-menu.active {
+    max-height: 1000px;
+    opacity: 1;
+}
+.custom-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+.custom-button:hover::before {
+    left: 100%;
+}
+.custom-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.social-icon {
+    transition: all 0.3s ease;
+}
+.social-icon:hover {
+    transform: translateY(-3px);
+}
+.github:hover {
+    color: #0077b5;
+}
+.linkedin:hover {
+    color: #0077b5;
+}
+.mail:hover {
+    color: #0077b5;
+}
