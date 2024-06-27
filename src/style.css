@@ -44,15 +44,12 @@ body {
     transform: scale(1.05);
     box-shadow: 0 0 30px rgba(0, 100, 255, 0.8);
 }
-
-/* Media query for laptop screens */
 @media (min-width: 1024px) {
     .profile-image {
-        width: 26rem; /* Adjust this value to make the image smaller on laptops */
-        height: 26rem; /* Adjust this value to make the image smaller on laptops */
+        width: 26rem;
+        height: 26rem;
     }
 }
-
 .custom-button {
     position: relative;
     overflow: hidden;
@@ -170,4 +167,18 @@ body {
 }
 #projects,#contact{
     scroll-margin-top: 20px;
+}
+.skills,.about,.projects,#contact{
+    animation: scrollanimation both;
+    animation-timeline: view(55% 5%);
+}
+@keyframes scrollanimation {
+    0% {
+        opacity: 0;
+        transform: translateY(100px) scale(0.2);
+    }
+    65% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }
