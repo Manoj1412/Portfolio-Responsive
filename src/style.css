@@ -154,6 +154,9 @@ body {
 #contact {
   scroll-margin-top: 20px;
 }
+form{
+    background: linear-gradient(to left top, rgb(33, 33, 70),#162c35);
+}
 .skills,
 .about,
 .projects,
