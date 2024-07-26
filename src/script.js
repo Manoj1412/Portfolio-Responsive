@@ -18,3 +18,7 @@ function scrollToSection(section) {
     behavior: 'smooth'
   });
 }
+document.getElementById('navbar-toggle').addEventListener('click', function() {
+  var navbarMenu = document.getElementById('mobile-menu');
+  navbarMenu.classList.toggle('show');
+});

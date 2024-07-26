@@ -1,5 +1,37 @@
 body {
-  padding-top: 64px;
+  padding-top: 50px;
+}
+.navbar-toggle {
+  cursor: pointer;
+}
+.navbar-menu {
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-100%);
+}
+.navbar-menu.show {
+  transform: translateX(0);
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.navbar-menu {
+  animation: slideOut 0.3s ease-in-out;
+}
+.navbar-menu.show {
+  animation: slideIn 0.3s ease-in-out;
 }
 @keyframes fadeIn {
   from {
@@ -47,6 +79,7 @@ body {
 .custom-button {
   position: relative;
   overflow: hidden;
+  background: linear-gradient(to left top, rgb(28, 72, 44),#24398f);
   transition: all 0.3s ease;
 }
 .navbar-menu {
@@ -155,7 +188,7 @@ body {
   scroll-margin-top: 20px;
 }
 form{
-    background: linear-gradient(to left top, rgb(33, 33, 70),#162c35);
+    background: linear-gradient(to left top, rgb(44, 37, 80),#1e3f4a);
 }
 .skills,
 .about,
