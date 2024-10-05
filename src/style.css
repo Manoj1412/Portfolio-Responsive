@@ -238,3 +238,13 @@ form::before{
     --angle: 360deg;
   }
 }
+.pbar{
+  background: linear-gradient(to right top,rgb(66, 66, 249) ,rgb(62, 0, 128));
+}
+.send{
+  background: linear-gradient(to right top,rgb(66, 66, 249) ,purple);
+}
+.send:hover{
+  box-shadow: 3px 3px 10px rgba(125, 14, 222, 0.8);
+  transition-duration: .4s;
+}
