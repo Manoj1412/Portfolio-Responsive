@@ -192,9 +192,7 @@ form{
     position: relative;
 }
 .skills,
-.about,
-.projects,
-#contact {
+.about {
   animation: scrollanimation both;
   animation-timeline: view(55% 5%);
 }
