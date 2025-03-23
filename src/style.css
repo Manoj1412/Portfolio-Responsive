@@ -191,21 +191,6 @@ form{
     background: linear-gradient(to left top, rgb(34, 28, 61),#1b4450);
     position: relative;
 }
-.skills,
-.about {
-  animation: scrollanimation both;
-  animation-timeline: view(55% 5%);
-}
-@keyframes scrollanimation {
-  0% {
-    opacity: 0;
-    transform: translateY(100px) scale(0.2);
-  }
-  65% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
 @property --angle{
   syntax: "<angle>";
   initial-value: 0deg;
